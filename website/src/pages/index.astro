@@ -1,10 +1,84 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="naoki`s website">
-    <!-- AboutComponent -->
-    <div class="">
-        <img src="./assets/profile_icon.png" alt="プロフィール画像" width={157} height={157} />
+<Layout title="naoki">
+  <!-- header-profileicon -->
+  <header class="flex flex-row">
+    <Image
+      src="/assets/profile_icon.png"
+      alt="プロフィール画像"
+      width="120"
+      height="120"
+      class="rounded-full"
+    />
+    <!-- 自分を表す一言メッセージとReadmoreボタン -->
+    <div class="ml-10 mt-16 flex flex-col">
+      <!-- 一言紹介 -->
+      <div class="font-sans text-lg text-gray">naoki is a web developer</div>
+      <!-- readmoreボタン -->
+      <div class="font-sans text-sm text-white"><a href="/about">Read more -></a></div>
     </div>
+  </header>
+
+  <!-- TimelineとWorks -->
+  <div class="flex flex-row gap-x-10">
+    <!-- works -->
+    <a
+      href="/works"
+      class="mr-auto mt-48 h-48 w-full rounded-lg bg-black transition-all duration-200 ease-in-out hover:scale-105"
+    ></a>
+    <!-- TimelineとSNS -->
+    <div class="flex w-full flex-col">
+      <!-- Timeline -->
+      <a
+        href="/timeline"
+        class="ml-auto mt-10 h-64 w-full rounded-lg bg-black transition-all duration-200 ease-in-out hover:scale-105"
+      ></a>
+      <!-- SNS -->
+      <div class="mt-6 flex flex-row gap-[28.7px]">
+        <!-- Github -->
+        <a href="https://github.com/nka21">
+          <Image
+            src="/assets/sns_icon/github.png"
+            alt="Github"
+            width="65"
+            height="65"
+            class="rounded-lg transition-all duration-200 ease-in-out hover:scale-105"
+          />
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/nka21dev">
+          <Image
+            src="/assets/sns_icon/x.jpg"
+            alt="X"
+            width="65"
+            height="65"
+            class="rounded-lg transition-all duration-200 ease-in-out hover:scale-105"
+          />
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/nka21__/">
+          <Image
+            src="/assets/sns_icon/Instagram.png"
+            alt="Instagram"
+            width="65"
+            height="65"
+            class="rounded-lg transition-all duration-200 ease-in-out hover:scale-105"
+          />
+        </a>
+        <!-- Discord -->
+        <a href="https://discord.gg/PFZvgqBjGG">
+          <Image
+            src="/assets/sns_icon/discord.png"
+            alt="Discord"
+            width="65"
+            height="65"
+            class="rounded-lg transition-all duration-200 ease-in-out hover:scale-105"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
 </Layout>
