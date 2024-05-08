@@ -1,22 +1,28 @@
 ---
+// コンポーネントのインストール
+import Footer from '../components/Footer.astro';
+
 interface Props {
-    title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content="naoki`s website" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-    </head>
-    <body>
-        <slot />
-    </body>
+<html lang="ja" class="size-full bg-base">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="naoki`s website" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="mx-auto my-24 max-w-[780px] px-6">
+      <slot />
+    </div>
+    <Footer />
+  </body>
 </html>
