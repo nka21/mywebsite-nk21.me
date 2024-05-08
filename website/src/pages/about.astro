@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import { YouTube } from '@astro-community/astro-embed-youtube';
 ---
 
 <Layout title="About | naoki">
@@ -62,15 +63,7 @@ import Layout from '../layouts/Layout.astro';
     />この楽曲は自己解釈ですが、「緊張や不安をも楽しみに変えていこうよ！」と背中を押してくれるような明るい楽曲でとても好きです。
   </p>
   <div class="my-8">
-    <iframe
-      width="732"
-      height="412"
-      src="https://www.youtube.com/embed/ukwo2O5SRvw?si=5nMQZTfzKGT4dJPL"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-      class="rounded-lg"></iframe>
+    <YouTube id="ukwo2O5SRvw" />
   </div>
   <h2 class="mt-16 font-sans text-xl font-bold text-darkblue">Contact</h2>
   <div class="flex flex-row">
