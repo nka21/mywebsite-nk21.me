@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Works | naoki">
+  <h1 class="mb-4 font-sans text-4xl font-bold text-darkblue">Works</h1>
+  <!-- detailsブロック -->
+  <div class="flex">
+    <div class="flex flex-col">
+      <h3 class="mt-4 font-sans text-2xl font-bold text-darkblue">TriPal</h3>
+      <!-- カテゴリ どういうプロジェクトかがタグ付けでわかりやすく -->
+      <div class="mt-2 flex flex-row gap-x-2.5">
+        <div class="rounded-sm border px-2 py-1">
+          <p class="justify-center font-sans text-xs font-semibold text-darkblue">チーム開発</p>
+        </div>
+        <div class="rounded-sm border px-2 py-1">
+          <p class="justify-center font-sans text-xs font-semibold text-darkblue">フロントエンド</p>
+        </div>
+        <div class="rounded-sm border px-2 py-1">
+          <p class="justify-center font-sans text-xs font-semibold text-darkblue">生成AI</p>
+        </div>
+      </div>
+      <!-- カスコード -->
+      <!-- <div class="flex">
+        <div
+          class="bg-slate-300 inline-flex items-center border px-2 py-1 mr-2.5 text-xs font-semibold border-transparent">
+          チーム開発
+        </div>
+        <div
+          class="bg-slate-300 inline-flex items-center border px-2 py-1 mr-2.5 text-xs font-semibold border-transparent">
+          フロントエンド
+        </div>
+        <div
+          class="bg-slate-300 inline-flex items-center border px-2 py-1 mr-2.5 text-xs font-semibold border-transparent">
+          生成AI
+        </div>
+      </div> -->
+      <!-- プロジェクトの説明 -->
+      <div class="my-4">
+        <p class="font-sans text-sm text-darkblue">
+          旅行支援生成AIサービス<br />旅行計画提案から旅行を楽しめることまで
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 画像ブロック -->
+  <div class="flex">
+    <a href="">
+      <Image
+        src="/assets/works/tripal.png"
+        alt="TriPal"
+        width="732"
+        height="300"
+        class="pointer-events-none rounded-lg"
+      />
+    </a>
+  </div>
+</Layout>
