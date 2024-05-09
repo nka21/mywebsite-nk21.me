@@ -29,7 +29,7 @@ export default {
       // テキストカラー3
       blue: '#5D6F89',
       // ダークブルー
-      darkblue: '#445D6F',
+      darkblue: '#505e6b',
     },
   },
   plugins: [],
