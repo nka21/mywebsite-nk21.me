@@ -32,6 +32,7 @@ export default {
       darkblue: '#505e6b',
       //
       lightblue: '#00ADB5',
+      aaa: '#393E46',
     },
   },
   plugins: [],

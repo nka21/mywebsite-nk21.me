@@ -1,13 +1,20 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+
+// 画像のインポート
+import ProfileIcon from '../assets/profile_icon.png';
+import Github from '../assets/sns_icon/github.png';
+import Twitter from '../assets/sns_icon/x.jpg';
+import Instagram from '../assets/sns_icon/Instagram.png';
+import Discord from '../assets/sns_icon/discord.png';
 ---
 
 <Layout title="naoki">
   <!-- header-profileicon -->
   <header class="flex flex-row">
     <Image
-      src="/assets/profile_icon.png"
+      src={ProfileIcon}
       alt="プロフィール画像"
       width="120"
       height="120"
@@ -41,7 +48,7 @@ import Layout from '../layouts/Layout.astro';
         <!-- Github -->
         <a href="https://github.com/nka21" target="_blank" rel="noopener noreferrer">
           <Image
-            src="/assets/sns_icon/github.png"
+            src={Github}
             alt="Github"
             width="65"
             height="65"
@@ -51,7 +58,7 @@ import Layout from '../layouts/Layout.astro';
         <!-- Twitter -->
         <a href="https://twitter.com/nka21dev" target="_blank" rel="noopener noreferrer">
           <Image
-            src="/assets/sns_icon/x.jpg"
+            src={Twitter}
             alt="X"
             width="65"
             height="65"
@@ -61,7 +68,7 @@ import Layout from '../layouts/Layout.astro';
         <!-- Instagram -->
         <a href="https://www.instagram.com/nka21__/" target="_blank" rel="noopener noreferrer">
           <Image
-            src="/assets/sns_icon/Instagram.png"
+            src={Instagram}
             alt="Instagram"
             width="65"
             height="65"
@@ -71,7 +78,7 @@ import Layout from '../layouts/Layout.astro';
         <!-- Discord -->
         <a href="https://discord.gg/PFZvgqBjGG" target="_blank" rel="noopener noreferrer">
           <Image
-            src="/assets/sns_icon/discord.png"
+            src={Discord}
             alt="Discord"
             width="65"
             height="65"
