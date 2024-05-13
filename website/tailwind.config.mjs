@@ -30,6 +30,8 @@ export default {
       blue: '#5D6F89',
       // ダークブルー
       darkblue: '#505e6b',
+      //
+      lightblue: '#00ADB5',
     },
   },
   plugins: [],
