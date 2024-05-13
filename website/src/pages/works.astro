@@ -1,6 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+
+// 画像のインポート
+import TriPal from '../assets/works/tripal.png';
 ---
 
 <Layout title="Works | naoki">
@@ -48,7 +51,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="flex">
     <a href="">
       <Image
-        src="/assets/works/tripal.png"
+        src={TriPal}
         alt="TriPal"
         width="732"
         height="300"

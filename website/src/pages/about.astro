@@ -2,6 +2,13 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import { YouTube } from '@astro-community/astro-embed-youtube';
+
+// 画像のインポート
+import Food1 from '../assets/about/about_1.png';
+import Food2 from '../assets/about/about_2.png';
+import Food3 from '../assets/about/about_3.png';
+import Food4 from '../assets/about/about_4.png';
+import VRChat from '../assets/about/vrchat.png';
 ---
 
 <Layout title="About | naoki">
@@ -17,28 +24,28 @@ import { YouTube } from '@astro-community/astro-embed-youtube';
   </p>
   <div class="my-8 grid grid-cols-4 gap-x-[2%]">
     <Image
-      src="/assets/about/about_1.png"
+      src={Food1}
       alt="食べ物写真1"
       width="172"
       height="172"
       class="pointer-events-none rounded-lg"
     />
     <Image
-      src="/assets/about/about_2.png"
+      src={Food2}
       alt="食べ物写真2"
       width="172"
       height="172"
       class="pointer-events-none rounded-lg"
     />
     <Image
-      src="/assets/about/about_3.png"
+      src={Food3}
       alt="食べ物写真3"
       width="172"
       height="172"
       class="pointer-events-none rounded-lg"
     />
     <Image
-      src="/assets/about/about_4.png"
+      src={Food4}
       alt="食べ物写真4"
       width="172"
       height="172"
@@ -50,7 +57,7 @@ import { YouTube } from '@astro-community/astro-embed-youtube';
   </p>
   <div class="my-8">
     <Image
-      src="/assets/about/vrchat.png"
+      src={VRChat}
       alt="vrchat"
       width="732"
       height="373"
